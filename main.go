@@ -1,5 +1,0 @@
-packpage main
-
-func main(){
-
-}
