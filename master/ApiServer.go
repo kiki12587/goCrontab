@@ -2,6 +2,7 @@ package master
 
 import (
 	"encoding/json"
+	"fmt"
 	"go分布式完整开发/crontab/common"
 	"net"
 	"net/http"
@@ -240,6 +241,7 @@ func InitApiServer() (err error) {
 	mux.HandleFunc("/job/kill", handleJobKill)
 	mux.HandleFunc("/job/log", handleJobLog)
 	mux.HandleFunc("/worker/list", handleWorkerList)
+    fmt.Println("start web api")
 
 	//静态文件目录
 	staticDir = http.Dir(G_config.Webroot)
