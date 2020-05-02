@@ -62,11 +62,12 @@ func main() {
 		goto ERR
 	}
 
-	//正常退出
+
 	for {
 		time.Sleep(1 * time.Second)
 	}
 
+	//正常退出
 ERR:
 	fmt.Println(err)
 }
